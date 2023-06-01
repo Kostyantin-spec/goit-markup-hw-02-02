@@ -1,6 +1,6 @@
 :root{
 --primary-text-color:#434455;
---title-text-color:#2E2F42;
+--title-text--color:#2E2F42;
 --accent-color:#4D5AE5;
 --beckground-color:#E5E5E5;
 --button-text-color:#FFFFFF;
@@ -11,8 +11,8 @@
 
 body {
     font-family: Roboto, sans-serif;
-    background: #E5E5E5;
-color: #434455;
+    background: var(--beckground-color);
+color:var(--primary-text-color);
 
 }
 ul {
@@ -29,6 +29,11 @@ ul {
 
 
 /* Лого   */
+.heder-cont{
+    font-style: normal;
+}
+
+
 .logo {
     font-family:Raleway,cursive;
     font-style: normal;
@@ -36,28 +41,33 @@ ul {
     font-size: 18px;
     line-height: 1.16;
     letter-spacing: 0.03em;
-    color:var(--title-text-color);
-    
+    color:var(--accent-color);
+    text-transform:uppercase;;
 }
-.logo-hover{
-    color: var(--accent-color);
-font-family: Raleway, cursive;
+.logo-heder-span{
+    color:#2E2F42;
+    font-family:Raleway,cursive;
     font-style: normal;
-    font-weight: 800;
+    font-weight:800;
     font-size: 18px;
     line-height: 1.16;
     letter-spacing: 0.03em;
-}
-span {
-    color:var(--accent-color);
+    text-transform: uppercase;
+
 }
 
+.list {
+    list-style:none;
+}
+.link {
+    text-decoration:none;
+}
 /*   Навигация*/
 .site-nav .link{
     color: var(--title-text-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
 }
 .site-nav .link.current{
     color: var(--accent-color);
@@ -86,7 +96,7 @@ color:var(--accent-color);
 /*  Секция герой  */
 .hiro-section 
 {
-background:var(--title-text-color);
+background: #2E2F42;
 }
 
 .hiro-title {
@@ -95,6 +105,7 @@ font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
+    letter-spacing: 0.02em;
 }
 .section-text {
     font-weight: 400;
@@ -125,7 +136,7 @@ font-weight: 700;
             line-height: 1.5;
             display: flex;
             align-items: center;
-      
+    letter-spacing: 0.04em;
 }
 .button:hover
 {
@@ -151,9 +162,8 @@ background:#404BBF;
     text-decoration: none;
     font-weight: 700;
         font-size: 36px;
-        line-height:1.1;
         text-align: center;
-        letter-spacing: 0.02em;
+        
 }
 
    /*    Наша команда*/
@@ -162,16 +172,24 @@ background:#404BBF;
  background-color:var(--beckground-color-sektion-team) ;   
 }
      /*Страница портфолио*/
-a {
-    text-decoration: none;
-}
+
+
 .partfolio-title {
    color: var(--primary-text-color); 
 font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
+    font-style: normal;
+}
+.portfolio-text {
+    color:#2E2F42;
+    font-weight: 500;
+        font-size: 20px;
+        line-height:1.2 ;
+        font-style: normal;
 }
 .button-portf {
+    cursor: pointer;
 color:var(--accent-color);
 background-color: var(--button-text-color);
 display: flex;
@@ -180,19 +198,29 @@ outline: none;
 font-weight: 500;
     font-size: 16px;
     line-height: 24px;
+    letter-spacing: 0.04em;
 }
 .button-portf:hover {
 color: var(--button-text-color);
-background-color: var(--accent-color);
+background-color:  #404BBF;
     cursor: pointer;
 }
 .button-portf:focus {
 color: var(--button-text-color);
-    background-color: var(--accent-color);
+    background-color: #404BBF;
 }
+.portfolio-img {
+text-decoration: none;
+}
+.portfolio-item {
+  list-style: none; 
+}
+
+
+
 /*    Футер*/
 .footer-color{
-    background:var(--title-text-color);
+background: #2E2F42;
 }
 .futer-logo{
     color: var(--beckground-color-sektion-team);
@@ -201,6 +229,7 @@ color: var(--button-text-color);
         font-weight: 800;
         font-size: 18px;
         line-height: 1.16;
+        text-decoration: none;
 }
 .footer-title{
     color: var(--beckground-color-sektion-team);
