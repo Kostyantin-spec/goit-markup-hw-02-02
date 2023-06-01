@@ -137,8 +137,6 @@ font-weight: 700;
         font-weight: 500;
             font-size: 16px;
             line-height: 1.5;
-        
-            align-items: center;
     letter-spacing: 0.04em;
 }
 .button:hover
@@ -169,7 +167,7 @@ background:#404BBF;
     text-decoration: none;
     font-weight: 700;
         font-size: 36px;
-        text-align: center;
+        
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
