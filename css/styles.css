@@ -56,6 +56,12 @@ ul {
     text-transform: uppercase;
 
 }
+.menu-title {
+    color: #2e2f42;
+ }
+.heder-address {
+    list-style: none;
+}
 
 .list {
     list-style:none;
@@ -180,11 +186,13 @@ background:#404BBF;
     text-transform: capitalize;
 
 }
-
+.item-list {
+background-color: #FFFFFF;
+}
    /*    Наша команда*/
 
 .section-color{
- background-color: #FFFFFF ;   
+background-color: #F4F4FD;
 }
      /*Страница портфолио*/
 
@@ -202,6 +210,7 @@ font-weight: 400;
         font-size: 20px;
         line-height:1.2 ;
         font-style: normal;
+        letter-spacing: 0.02em;
 }
 .button-portf {
     cursor: pointer;
