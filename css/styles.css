@@ -131,22 +131,16 @@ font-weight: 700;
     font-family: "Roboto", sans-serif;
     color: var(--button-text-color);
     background-color:var(--accent-color); 
-    
-        
-        border: none;
+     border: none;
         font-weight: 500;
             font-size: 16px;
             line-height: 1.5;
     letter-spacing: 0.04em;
 }
 .button:hover
-
 {
 color:var(--button-text-color);
 background:#404BBF;
-
-    
-
 }
 .button:focus {
     color: var(--button-text-color);
@@ -171,7 +165,6 @@ background:#404BBF;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-
 }
 .item-list {
 background-color: #FFFFFF;
