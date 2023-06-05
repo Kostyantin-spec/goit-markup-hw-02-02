@@ -12,11 +12,22 @@
 body {
     font-family: Roboto, sans-serif;
     background: var(--button-text-color);
-color:var(--primary-text-color);
+    color:var(--primary-text-color);
 
 }
+p.h1,h2,h3,h4,h5,h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    }
+
 ul {
     list-style:none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+img {
+    display: block;
 }
 
 /*вторичний цвет color: #434455;  */
@@ -28,11 +39,16 @@ ul {
 
 
 
-/* Лого   */
+/* Лого --------------*/
 .heder-cont{
     font-style: normal;
 }
+.heder-nav {
+    display:flex;
+    align-items: center;
 
+    
+}
 
 .logo {
     font-family: "Raleway", sans-serif;
@@ -43,7 +59,10 @@ ul {
     line-height: 1.17;
     letter-spacing: 0.03em;
     color:var(--accent-color);
-    text-transform:uppercase;;
+    text-transform:uppercase;
+    margin-left:px;
+    padding: 24px 0;
+    
 }
 .logo-heder-span{
     color:#2E2F42;
@@ -54,6 +73,7 @@ ul {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+
 
 }
 .menu-title {
@@ -69,85 +89,163 @@ ul {
 .link {
     text-decoration:none;
 }
-/*   Навигация*/
+ .heder-container {
+    display: flex;
+    align-items: center;
+}
+ 
+.container {
+   width: 100%; 
+   max-width: 1128px;
+   padding-left: 15px;
+   padding-right: 15px;
+    margin:0 auto;
+   justify-content: space-between;
+    /* outline: 2px solid red; */
+}
+/*   Навигация -----------*/
+.site-nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-left:76px ;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
 .site-nav .link{
     color:#2e2f42;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
+        display:flex;
+        align-items: center;
+        padding: 24px;
 }
 .site-nav .link.current{
     color: var(--accent-color);
 }
+.site-nav-menu {
+    display: flex;
+}
 .site-nav .link:hover,
 .site-nav .link:focus
 {
-text-decoration:underline;
-color: #404bbf;
+   text-decoration:underline;
+   color: #404bbf;
 }
+/* ------- Адрес----------  */
 .heder-address {
     font-style: normal;
+    margin-right: px;
+}
+.site-address-link {
+    display: flex;
 }
 .site-address {
     color: var(--primary-text-color);
-
+    display: flex;
+    align-items: center;
     font-weight: 400;
         font-size: 16px;
         line-height:1.5;
         letter-spacing: 0.02em;
+        padding: 24px 0;
+        gap: 40px;
 }
 .site-address .link:hover,
 .site-address .link:focus
 {
-color: #404bbf;
+    color: #404bbf;
     font-weight: 400;
         font-size: 16px;
         line-height:1.5;
 }
-/*  Секция герой  */
+/*  Секция герой ------------ */
 .hiro-section 
 {
-background: #2E2F42;
-}
 
+}
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+.hiro-container {
+   background: #2E2F42;
+   height: 600px;
+
+} 
 .hiro-title {
-color:var(--button-text-color);
-font-weight: 700;
+    color:var(--button-text-color);
+    font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
+    max-width: 496px;
+     margin: 0 auto;  
+     padding-top:  188px;
+    margin-right: auto;
+     margin-left: auto;
 }
 .section-text {
     font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
-        letter-spacing: 0.02em
+        letter-spacing: 0.02em;
+        display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            /* padding-bottom: 152px; */
 }
-
+/* -------Кнопка герой--------- */
 .button {
     cursor: pointer;
     font-family: "Roboto", sans-serif;
     color: var(--button-text-color);
     background-color:var(--accent-color); 
      border: none;
-        font-weight: 500;
-            font-size: 16px;
-            line-height: 1.5;
+    width: 169px;
+    height: 56px;
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 1.5;
     letter-spacing: 0.04em;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+     border-radius: 4px;
 }
 .button:hover
 {
-color:var(--button-text-color);
-background:#404BBF;
+    color:var(--button-text-color);
+     background:#404BBF;
 }
 .button:focus {
     color: var(--button-text-color);
-        background: #404BBF;
+     background: #404BBF;
 }
-/*    Наши роботи */
-
+/*    Наши роботи ----------*/
+.business-container {
+    
+}
+.business-info {
+    display: flex;
+    gap: 24px;
+    padding-top: 120px;
+}
+.business-item {
+   width:calc((100% - 72px) / 4 ); 
+  
+}
 .section-title {
     color: #2E2F42;
     text-decoration: none;
@@ -155,31 +253,70 @@ background:#404BBF;
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+       
 }
+.doing  {
+    display: flex;
+     gap: 24px;
+     padding-bottom: 120px;
+}
+.doing-item {
+width: calc((100% - 48px) / 3);
+}
+
 .headlines-title {
     color:#2e2f42;
     text-decoration: none;
     font-weight: 700;
-        font-size: 36px;
-        text-align: center;
+    font-size: 36px;
+    text-align: center;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+     padding-top: 120px;
+    margin-bottom: 72px;
 }
 .item-list {
-background-color: #FFFFFF;
+      background-color: #FFFFFF;
 }
-   /*    Наша команда*/
+   /*    Наша команда  -------------*/
 
 .section-color{
-background-color: #F4F4FD;
+    background-color: #F4F4FD;
+
 }
-     /*Страница портфолио*/
+.container-comand {
 
+}
+.comand-title {
+/* display: flex;
+    flex-wrap: wrap;
+    justify-content: center; */
 
+    padding-bottom:152px ;
+    padding-top:32px ;
+}
+.team-list {
+    display: flex;
+    gap: 24px;
+}
+.item-list {
+     width: calc((100% - 72px) / 4); 
+     display: block;
+     margin: 0 auto;
+}
+     /*Страница портфолио -----------*/
+
+.portfolio-content {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
 .partfolio-title {
    color: var(--primary-text-color); 
-font-weight: 400;
+   font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     font-style: normal;
@@ -193,43 +330,66 @@ font-weight: 400;
         font-style: normal;
         letter-spacing: 0.02em;
 }
+.portfolio-item {
+    
+  width: calc((100% - 48px) / 3); 
+}
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap:28px 24px;
+}
+/* -----------Кнопка портфолио----------- */
 .button-portf {
     cursor: pointer;
-color:var(--accent-color);
-background-color:#F4F4FD;
-
-
-outline: none;
-font-weight: 500;
+    color:var(--accent-color);
+    background-color:#F4F4FD;
+    outline: none;
+    font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.04em;
     font-family: "Roboto", sans-serif;
+    border: none;
 }
 .button-portf:hover {
-color: var(--button-text-color);
-background-color:  #404BBF;
+    color: var(--button-text-color);
+    background-color:  #404BBF;
     cursor: pointer;
 }
 .button-portf:focus {
-color: var(--button-text-color);
+    color: var(--button-text-color);
     background-color: #404BBF;
 }
+.button-list {
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 24px;
+    margin-bottom: 72px;
+}
 .portfolio-img {
-text-decoration: none;
+    text-decoration: none;
 }
 .portfolio-item {
-  list-style: none; 
+    list-style: none; 
 }
 .portfolio-item {
     list-style: none;
+    width: calc((100% - 24 * 8) / 9);
 }
 
+/*    Футер-------------*/
+.footer-top {
 
-
-/*    Футер*/
+}
 .footer-color{
-background: #2E2F42;
+    background: #2E2F42;
+    padding-top:101.5px ;
+    padding-bottom:189.5px ; 
+
 }
 .footer-logo{
     color: #F4F4FD;
@@ -245,7 +405,8 @@ background: #2E2F42;
 .footer-title{
     color: #f4f4fd;
     font-weight: 400;
-        font-size: 16px;
-        line-height:1.5 ;
-letter-spacing: 0.02em;
+    font-size: 16px;
+    line-height:1.5 ;
+    letter-spacing: 0.02em;
+    max-width:264px;
 }
