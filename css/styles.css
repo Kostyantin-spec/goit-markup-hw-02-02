@@ -40,8 +40,13 @@ img {
 
 
 /* Лого --------------*/
-.heder {
+.header {
     border-bottom: 1px solid #e7e9fc ;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    width: 1158px;
 }
 .heder-cont{
     font-style: normal;
@@ -95,15 +100,11 @@ img {
 .link {
     text-decoration:none;
 }
- .heder-container {
-    display: flex;
-    align-items: center;
-    width: 1158px;
-}
+ 
  
 .container {
    width: 100%; 
-   max-width: 1128px;
+   max-width: 1158px;
    padding-left: 15px;
    padding-right: 15px;
     margin:0 auto;
@@ -114,7 +115,7 @@ img {
 .site-nav {
     display: flex;
     align-items: center;
-    padding: 24px 0;
+     padding: 24px 0; 
     gap: 40px;
     padding-left:76px ;
     padding-top: 24px;
@@ -128,14 +129,14 @@ img {
         letter-spacing: 0.02em;
         display:flex;
         align-items: center;
-        padding: 24px;
+    
 }
 .site-nav .link.current{
     color: var(--accent-color);
 }
 .site-nav-menu {
     display: flex;
-    padding: 24px 0;
+     padding: 24px 0; 
 }
 .site-nav .link:hover,
 .site-nav .link:focus
@@ -317,7 +318,7 @@ width: calc((100% - 48px) / 3);
 
     padding: 32px 16px;
     padding-bottom:152px ;
-    padding-top:32px ;
+    /* padding-top:32px ; */
 
 }
 .team-list {
