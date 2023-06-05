@@ -40,6 +40,9 @@ img {
 
 
 /* Лого --------------*/
+.heder {
+    border-bottom: 1px solid #e7e9fc ;
+}
 .heder-cont{
     font-style: normal;
 }
@@ -62,6 +65,7 @@ img {
     text-transform:uppercase;
     margin-left:px;
     padding: 24px 0;
+    margin-right: 76px
     
 }
 .logo-heder-span{
@@ -92,6 +96,7 @@ img {
  .heder-container {
     display: flex;
     align-items: center;
+    width: 1158px;
 }
  
 .container {
@@ -107,6 +112,7 @@ img {
 .site-nav {
     display: flex;
     align-items: center;
+    padding: 24px 0;
     gap: 40px;
     padding-left:76px ;
     padding-top: 24px;
@@ -178,6 +184,9 @@ img {
     clip-path: inset(50%);
     margin: -1px;
 }
+.hiro-section {
+    /* padding: 188px 0; */
+}
 .hiro-container {
    background: #2E2F42;
    height: 600px;
@@ -192,7 +201,7 @@ img {
     letter-spacing: 0.02em;
     max-width: 496px;
      margin: 0 auto;  
-     padding-top:  188px;
+     padding:  188px 0;
     margin-right: auto;
      margin-left: auto;
 }
@@ -203,8 +212,9 @@ img {
         letter-spacing: 0.02em;
         display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+             justify-content: center; 
             /* padding-bottom: 152px; */
+            text-align: center;
 }
 /* -------Кнопка герой--------- */
 .button {
@@ -213,6 +223,7 @@ img {
     color: var(--button-text-color);
     background-color:var(--accent-color); 
      border: none;
+    min-width: 169px;
     width: 169px;
     height: 56px;
      font-weight: 500;
@@ -234,6 +245,9 @@ img {
      background: #404BBF;
 }
 /*    Наши роботи ----------*/
+.business {
+padding: 120px 0;
+}
 .business-container {
     
 }
@@ -241,6 +255,7 @@ img {
     display: flex;
     gap: 24px;
     padding-top: 120px;
+    margin-bottom: 8px;
 }
 .business-item {
    width:calc((100% - 72px) / 4 ); 
@@ -256,7 +271,12 @@ img {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        text-align: center;
+        margin-bottom: 8px;
        
+}
+.section-doing {
+    padding-bottom: 120px;
 }
 .doing  {
     display: flex;
@@ -286,7 +306,7 @@ width: calc((100% - 48px) / 3);
 
 .section-color{
     background-color: #F4F4FD;
-
+    padding: 120px 0;
 }
 .container-comand {
 
@@ -295,7 +315,7 @@ width: calc((100% - 48px) / 3);
 /* display: flex;
     flex-wrap: wrap;
     justify-content: center; */
-
+    padding: 32px 16px;
     padding-bottom:152px ;
     padding-top:32px ;
 }
@@ -307,14 +327,19 @@ width: calc((100% - 48px) / 3);
      width: calc((100% - 72px) / 4); 
      display: block;
      margin: 0 auto;
+    border-radius: 0px 0px 4px 4px;
 }
      /*Страница портфолио -----------*/
-
-.portfolio-content {
+ .section-portfolio {
     padding-top: 96px;
     padding-bottom: 120px;
+ }
+
+.portfolio-content {
+    /* padding-top: 96px;
+    padding-bottom: 120px; */
 }
-.partfolio-title {
+.portfolio-title {
    color: var(--primary-text-color); 
    font-weight: 400;
     font-size: 16px;
@@ -329,6 +354,7 @@ width: calc((100% - 48px) / 3);
         line-height:1.2 ;
         font-style: normal;
         letter-spacing: 0.02em;
+        margin-bottom: 8px;
 }
 .portfolio-item {
     
@@ -338,12 +364,17 @@ width: calc((100% - 48px) / 3);
     display: flex;
     flex-wrap: wrap;
     gap:28px 24px;
+    row-gap: 48px;
+}
+.portfolio-spec {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
 }
 /* -----------Кнопка портфолио----------- */
 .button-portf {
     cursor: pointer;
     color:var(--accent-color);
-    background-color:#F4F4FD;
+    /* background-color:#F4F4FD; */
     outline: none;
     font-weight: 500;
     font-size: 16px;
@@ -351,15 +382,20 @@ width: calc((100% - 48px) / 3);
     letter-spacing: 0.04em;
     font-family: "Roboto", sans-serif;
     border: none;
+    padding: 12px 24px;
+    border: 1px solid #e7e9fc;
+    border-radius: 4px;
 }
 .button-portf:hover {
     color: var(--button-text-color);
     background-color:  #404BBF;
     cursor: pointer;
+    border: 1px solid transparent;
 }
 .button-portf:focus {
     color: var(--button-text-color);
     background-color: #404BBF;
+    border: 1px solid transparent;
 }
 .button-list {
     display: flex;
@@ -389,6 +425,7 @@ width: calc((100% - 48px) / 3);
     background: #2E2F42;
     padding-top:101.5px ;
     padding-bottom:189.5px ; 
+    padding: 100px 0;
 
 }
 .footer-logo{
@@ -400,6 +437,8 @@ width: calc((100% - 48px) / 3);
         text-decoration: none;
         letter-spacing: 0.03 ;
         text-transform: uppercase ;
+        display: inline-block;
+        margin-bottom: 16px;
 
 }
 .footer-title{
