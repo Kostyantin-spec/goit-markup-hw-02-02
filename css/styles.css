@@ -65,7 +65,9 @@ img {
     text-transform:uppercase;
     margin-left:px;
     padding: 24px 0;
-    margin-right: 76px
+    margin-right: 76px;
+    display: inline-block;
+    margin-bottom: 16px;
     
 }
 .logo-heder-span{
@@ -133,6 +135,7 @@ img {
 }
 .site-nav-menu {
     display: flex;
+    padding: 24px 0;
 }
 .site-nav .link:hover,
 .site-nav .link:focus
@@ -140,6 +143,7 @@ img {
    text-decoration:underline;
    color: #404bbf;
 }
+
 /* ------- Адрес----------  */
 .heder-address {
     font-style: normal;
@@ -168,21 +172,19 @@ img {
         line-height:1.5;
 }
 /*  Секция герой ------------ */
-.hiro-section 
-{
 
-}
+
 .visually-hidden {
     position: absolute;
-    white-space: nowrap;
     width: 1px;
     height: 1px;
-    overflow: hidden;
+    margin: -1px;
     border: 0;
     padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
     clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+    overflow: hidden;
 }
 .hiro-section {
     /* padding: 188px 0; */
@@ -190,7 +192,7 @@ img {
 .hiro-container {
    background: #2E2F42;
    height: 600px;
-
+width: 1158px;
 } 
 .hiro-title {
     color:var(--button-text-color);
@@ -312,12 +314,11 @@ width: calc((100% - 48px) / 3);
 
 }
 .comand-title {
-/* display: flex;
-    flex-wrap: wrap;
-    justify-content: center; */
+
     padding: 32px 16px;
     padding-bottom:152px ;
     padding-top:32px ;
+
 }
 .team-list {
     display: flex;
@@ -336,8 +337,8 @@ width: calc((100% - 48px) / 3);
  }
 
 .portfolio-content {
-    /* padding-top: 96px;
-    padding-bottom: 120px; */
+
+
 }
 .portfolio-title {
    color: var(--primary-text-color); 
@@ -369,6 +370,7 @@ width: calc((100% - 48px) / 3);
 .portfolio-spec {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
+    border-top: none;
 }
 /* -----------Кнопка портфолио----------- */
 .button-portf {
