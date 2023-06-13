@@ -50,8 +50,8 @@ img {
     font-style: normal;
 }
 .heder-nav {
-    display:flex;
-    align-items: center;
+     display:flex;
+    align-items: center; 
 
     
 }
@@ -67,7 +67,7 @@ color: #404bbf ;
     text-transform:uppercase;
     margin-left:px;
     padding: 24px 0;
-    margin-right: 76px
+    margin-right: 76px;
     
 }
 .logo-heder-span{
@@ -84,7 +84,8 @@ color: #404bbf ;
 }
 .menu-title {
      color: #2e2f42; 
-        transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+        transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
  }
 .heder-address {
     list-style: none;
@@ -120,6 +121,7 @@ color: #404bbf ;
     padding-left:76px ;
     padding-top: 24px;
     padding-bottom: 24px;
+    /* color: #404bbf; */
 }
 .site-nav .link{
     color:#2e2f42;
@@ -134,7 +136,7 @@ color: #404bbf ;
 }
 .current {
     position: relative;
-    color: #404bbf;
+    /* color: #404bbf; */
 }
 .current::after{
     content: '';
@@ -151,15 +153,13 @@ color: #404bbf ;
 
 }
 .site-nav .link:hover,
-.site-nav .link:focus
-{
-
+.site-nav .link:focus{
    color: #404bbf;
 }
 /* ------- Адрес----------  */
 .heder-address {
     font-style: normal;
-    margin-right: px;
+    /* margin-right: px; */
 }
 .site-address-link {
     display: flex;
@@ -233,7 +233,7 @@ padding: 188px 0;
         line-height: 1.5;
         letter-spacing: 0.02em;
         display: flex;
-            flex-wrap: wrap;
+             flex-wrap: wrap;
              justify-content: center; 
     
 }
@@ -345,7 +345,7 @@ width: calc((100% - 48px) / 3);
     text-align: center;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    text-transform: capitalize;
+    text-transform: capitalize; 
      padding-top: 120px;
     margin-bottom: 72px;
 }
@@ -415,19 +415,19 @@ width: calc((100% - 48px) / 3);
 
 .sending {
     width: 100%;
-    height: 100%;
+    height: 100%; 
     border-radius: 50%;
-    display: flex;
+     display: flex; 
     text-align: center;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
-      background-color: #4D5AE5;  
+    background-color: #4D5AE5;  
     transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
-.sending :hover,
-.sending :focus {
+.sending :hover .item-icon-soc 
+.sending :focus .item-icon-soc{
 background-color: #404bbf;
 } 
 .item-icon-soc 
@@ -700,9 +700,8 @@ color: #FFFFFF;
 }
 .footer-social-link :hover,
 .footer-social-link :focus {
-    background-color: #31d0aa;
-    border: none;
-}
+    
+    background-color: #31d0aa;}
 .footer-social-svg {
 fill: #F4F4FD;
 }
@@ -748,25 +747,18 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
     cursor: pointer;
 }
 .svg-button {
-    background-color: #e7e9fc;
-/* border: 1px solid rgba(0, 0, 0, 0.1);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+fill: currentColor;
+ border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     color: #2E2F42;
 }
-.svg-button :hover,
-.svg-button :focus {
 
-background-color: #404bbf; 
-}
 .modal-btn :hover,
 .modal-btn :focus {
- background-color: #404bbf; 
-border: none;
-
+fill: #FFFFFF;
 }
 .is-hidden {
     pointer-events: none;
     opacity:0;
-
     visibility: hidden;
 }
