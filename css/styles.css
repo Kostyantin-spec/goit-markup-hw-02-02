@@ -509,6 +509,7 @@ transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  .portfolio-cover-block {
    position: relative;
    overflow: hidden;
+color: #404bbf;
  }
  .portfolio-cover-text {
     position: absolute;
@@ -684,8 +685,6 @@ margin-right: 120px;
 }
 .footer-social-paragraph {
 color: #FFFFFF;
-
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -754,10 +753,10 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
     top: 24px;
     width: 24px;
     height:24px;
-    border: 1px solid grey;
-    background-color: transparent;
+
+
     border-radius: 50%;
-    border: none;
+    /* border: none; */
     cursor: pointer;
 }
 .svg-button {
@@ -773,8 +772,8 @@ background-color: #404bbf;
 }
 .modal-btn :hover,
 .modal-btn :focus {
-    /* background-color: #404bbf; */
-    fill: #ffffff;
+ background-color: #404bbf; 
+border: none;
 }
 .is-hidden {
     pointer-events: none;
