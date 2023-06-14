@@ -434,8 +434,8 @@ width: calc((100% - 48px) / 3);
 }
 
 
-.sending :hover, 
-.sending :focus {
+.sending:hover, 
+.sending:focus {
 background-color: #404bbf;
     /* border: solid transparent;  */
     border: none;
@@ -458,14 +458,7 @@ background-color: #404bbf;
 }
 .customers-ikon {
     fill: currentColor;
-       /* height: 100%;
-        width: 100%;
-        border: 1px solid #8e8f99;
-        border-radius: 4px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #8e8f99; */
+      
 }
 .customers-list {
     display: flex;
@@ -490,11 +483,11 @@ background-color: #404bbf;
      transition:border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
-.customers-ikon-link :hover {
+.customers-ikon-link:hover {
     border-color: #404bbf;
     color: #404bbf;
 }
-.customers-ikon-link :focus {
+.customers-ikon-link:focus {
     border-color: #404bbf;
         color: #404bbf;
 }
@@ -607,7 +600,7 @@ transform: translateY(0%);
 .button-portf:hover,
 .button-portf:focus {
     color: var(--button-text-color);
-    background-color:  #404BBF;
+    background-color:#404BBF;
     cursor: pointer;
     border: 1px solid transparent;
     box-shadow:0px 3px 1px rgba(0, 0, 0, 0.1),
@@ -646,14 +639,14 @@ transform: translateY(0%);
 .footer-top {
    margin-right: 120px;
 }
-.footer-color{
+.footer-color {
     background: #2E2F42;
     padding-top:101.5px ;
     padding-bottom:189.5px ; 
     padding: 100px 0;
 
 }
-.footer-logo{
+.footer-logo {
     color: #F4F4FD;
     font-family: "Raleway", sans-serif;
         font-weight: 800;
@@ -666,7 +659,7 @@ transform: translateY(0%);
 
 
 }
-.footer-title{
+.footer-title {
     color: #f4f4fd;
     font-weight: 400;
     font-size: 16px;
@@ -711,8 +704,8 @@ color: #FFFFFF;
     border-radius: 50%;
     transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
- .footer-social-link :hover,
- .footer-social-link :focus {
+ .footer-social-link:hover,
+ .footer-social-link:focus {
      border: none; 
     background-color: #31d0aa;}
 
@@ -721,8 +714,6 @@ fill: #F4F4FD;
 display: flex;
 align-items: center;
 justify-content: center;
-width: 100%;
-    height:100%;
     border-radius: 50%;
 }
 
@@ -747,7 +738,7 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
     background-color:#FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
-        /* transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .beckdrop .is-hidden .modal {
     transform: translate(-50%, -50%) scaleY(0);
@@ -761,7 +752,7 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
     padding: 0;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: absolute;
-    right:24px ;
+    right: 24px;
     top: 24px;
     width: 24px;
     height:24px;
@@ -774,13 +765,13 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
     color: #2E2F42;
 }
 
-.modal-btn :hover,
-.modal-btn :focus {
+.modal-btn:hover,
+.modal-btn:focus {
     background-color: #404bbf;
     border: none;
 }
-.svg-button :hover,
-.svg-button :focus {
+.svg-button:hover,
+.svg-button:focus {
     fill: #FFFFFF;
 }
 .is-hidden {
