@@ -50,7 +50,7 @@ img {
     font-style: normal;
 }
 .heder-nav {
-     display:flex;
+     display:flex; 
     align-items: center; 
 
     
@@ -83,9 +83,8 @@ color: #404bbf ;
 
 }
 .menu-title {
-     color: #2e2f42; 
-        transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+     transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
  }
 .heder-address {
     list-style: none;
@@ -98,7 +97,7 @@ color: #404bbf ;
     text-decoration:none;
 }
  .heder-container {
-    display: flex;
+ display: flex; 
     align-items: center;
     width: 1158px;
 }
@@ -114,7 +113,7 @@ color: #404bbf ;
 }
 /*   Навигация -----------*/
 .site-nav {
-    display: flex;
+    display: flex; 
     color: #2e2f42;
     align-items: center;
     padding: 24px 0;
@@ -122,9 +121,9 @@ color: #404bbf ;
     padding-left:76px ;
     padding-top: 24px;
     padding-bottom: 24px;
-    /* color: #404bbf; */
+     /* color: #404bbf;  */
 }
-.site-nav .link{
+.site-nav .link {
     color:#2e2f42;
         font-weight: 500;
         font-size: 16px;
@@ -136,13 +135,11 @@ color: #404bbf ;
         transition:color 250ms cubic-bezier(0.4, 0.2, 1);
         
 }
-.current {
-    position: relative;
-    /* color: #404bbf; */
-}
-.current::after{
+
+.current::after {
     content: '';
     position: absolute;
+    display: block;
     bottom: -1px;
     left: 0;
     width: 100%;
@@ -151,9 +148,14 @@ color: #404bbf ;
     background-color:#404bbf; ;
 }
 .site-nav-menu {
-    display: flex;
+    
 
 }
+.current {
+
+    color: #404bbf;
+}
+
 .site-nav .link:hover,
 .site-nav .link:focus{
    color: #404bbf;
@@ -161,7 +163,7 @@ color: #404bbf ;
 /* ------- Адрес----------  */
 .heder-address {
     font-style: normal;
-    /* margin-right: px; */
+    
 }
 .site-address-link {
     display: flex;
@@ -182,9 +184,7 @@ color: #404bbf ;
 .site-address .link:focus
 {
     color: #404bbf;
-    font-weight: 400;
-        font-size: 16px;
-        line-height:1.5;
+    
 }
 /* ------ Секция герой ------------ */
 
@@ -235,8 +235,8 @@ padding: 188px 0;
         line-height: 1.5;
         letter-spacing: 0.02em;
         display: flex;
-             flex-wrap: wrap;
-             justify-content: center; 
+       flex-wrap: wrap;
+       justify-content: center; 
     
 }
 /* -------Кнопка герой--------- */
@@ -354,7 +354,7 @@ width: calc((100% - 48px) / 3);
 .item-list {
       background-color: #FFFFFF;
 }
-   /*    Наша команда  -------------*/
+   /* -----------   Наша команда  -------------*/
 
 .section-color{
     background-color: #F4F4FD;
@@ -367,10 +367,7 @@ width: calc((100% - 48px) / 3);
 }
 .comand-title {
     padding: 32px 0;
-    /* padding-bottom:152px ;
-    background: #FFFFFF; */
     
-        
 }
 
 .comand-section-title {
@@ -427,14 +424,14 @@ width: calc((100% - 48px) / 3);
     align-items: center;
     border: 1px solid #4D5AE5;
     background-color: #4D5AE5;  
-    transition:background-color  var(--transition) 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 .sending :hover, 
 .sending :focus {
 background-color: #404bbf;
-border: solid transparent;
+/* border: solid transparent; */
 } 
 .item-icon-soc 
  {
@@ -480,21 +477,18 @@ transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
      transition:border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
-.customers-ikon-link :hover.customers-ikon {
+.customers-ikon-link :hover {
     border-color: #404bbf;
-    color:  #404bbf;
+    color: #404bbf;
 }
-.customers-ikon-link :focus.customers-ikon {
+.customers-ikon-link :focus {
     border-color: #404bbf;
-        color:  #404bbf;
+        color: #404bbf;
 }
 .customers-item {
-   
-        width: 168px;
-        height: 88px; 
+    width: 168px;
+    height: 88px; 
     width: calc((100% - 120px) / 6);
-    
-    
 }
 
      /*---------Страница портфолио -----------*/
@@ -553,7 +547,7 @@ color: #404bbf;
     transition:box-shadow 250ms cubic-bezier(0.4, 0.2, 1);
 }
 .portfolio-img:is(:hover,:focus){
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     border: 1px solid #F4F4FD;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -637,7 +631,7 @@ transform: translateY(0%);
     align-items: baseline; 
 }
 .footer-top {
-margin-right: 120px;
+   margin-right: 120px;
 }
 .footer-color{
     background: #2E2F42;
@@ -706,6 +700,7 @@ color: #FFFFFF;
  .footer-social-link :focus {
     border: none;
     background-color: #31d0aa;}
+
 .footer-social-svg {
 fill: #F4F4FD;
 }
@@ -720,8 +715,8 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
 }
 .modal {
     position: absolute;
-        width: 408px;
-       min-height: 584px;
+    width: 408px;
+     min-height: 584px;
      top: 50%;
     left: 50%; 
     transform: translate(-50%, -50%) scaleY(1);
@@ -731,7 +726,7 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
         border-radius: 4px;
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.beckdrop.is-hidden .modal {
+.beckdrop .is-hidden .modal {
     transform: translate(-50%, -50%) scaleY(0);
 }
 .modal-btn {
@@ -751,21 +746,19 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
     cursor: pointer;
 }
 .svg-button {
-fill: currentColor;
- 
+   fill: currentColor;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     color: #2E2F42;
 }
 
 .modal-btn :hover,
 .modal-btn :focus {
-
-color: #404BBF;
-border: none;
+    background-color: #404bbf;
+    border: none;
 }
 .svg-button :hover,
-.svg-button :focus{
-fill: #FFFFFF;
+.svg-button :focus {
+    fill: #FFFFFF;
 }
 .is-hidden {
     pointer-events: none;
