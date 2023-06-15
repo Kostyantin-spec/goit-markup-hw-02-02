@@ -668,7 +668,7 @@ transform: translateY(0%);
     margin-bottom: 16px;
 }
 .footer-social {
-    display: flex;
+    display: block;
     margin-bottom: 16px;
 }
 .footer-social-media {
