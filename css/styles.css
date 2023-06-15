@@ -668,7 +668,7 @@ transform: translateY(0%);
     margin-bottom: 16px;
 }
 .footer-social {
-     
+    margin-bottom: 16px;
 }
 .footer-social-media {
     display: flex;
@@ -714,6 +714,7 @@ display: flex;
 align-items: center;
 justify-content: center;
     border-radius: 50%;
+
 }
 
 /* --------------------------- */
