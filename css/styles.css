@@ -635,7 +635,7 @@ transform: translateY(0%);
     align-items: baseline; 
 }
 .footer-top {
-   margin-right: 120px;
+   /* margin-right: 120px; */
 }
 .footer-color {
     background: #2E2F42;
