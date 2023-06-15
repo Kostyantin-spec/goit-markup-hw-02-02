@@ -679,6 +679,7 @@ transform: translateY(0%);
    
 }
 .footer-social-paragraph {
+    display: flex;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -703,6 +704,7 @@ transform: translateY(0%);
     background-color:#4D5AE5 ;
     border-radius: 50%;
     transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    margin-bottom: 16px;
 }
  .footer-social-link:hover,
  .footer-social-link:focus {
