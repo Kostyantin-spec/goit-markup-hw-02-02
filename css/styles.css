@@ -962,6 +962,7 @@ width: calc((100% - 48px) / 3);
         line-height: 1.5em;
         letter-spacing: 0.02em;
         color: #FFFFFF;
+        margin-bottom: 24px;
  }
 .modal-send-btn {
 display: block;
