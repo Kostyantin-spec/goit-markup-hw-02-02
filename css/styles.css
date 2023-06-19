@@ -712,6 +712,7 @@ width: calc((100% - 48px) / 3);
 
 }
 .footer-input {
+
     width: 264px; 
     height: 40px;
     border: 1px solid #FFFFFF;
@@ -720,10 +721,11 @@ width: calc((100% - 48px) / 3);
         background-color: transparent;
         padding:8px 16px;
         margin-right: 24px;
+    
 }
 .footer-btn {
     display: flex;
-    justify-content:right;
+    justify-content:flex-end;
     text-align:center;
     font-weight: 500;
         font-size: 16px;
@@ -924,7 +926,7 @@ width: calc((100% - 48px) / 3);
     align-items: center;
  }
  .check-text span {
-    /* display: inline-flex; */
+     display: inline-flex; 
     width: 16px;
     height: 16px;
     border: 1px solid #404BBF;
