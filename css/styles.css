@@ -826,8 +826,14 @@ width: calc((100% - 48px) / 3);
     visibility: hidden;
 }
  .modal-title {
-   text-align: center;
-   margin-bottom: 34px;
+    text-align: center;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5em;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
  }
  
  textarea {
@@ -835,7 +841,8 @@ width: calc((100% - 48px) / 3);
  }
  
  .modal-field {
-  position: relative; 
+   position: relative; 
+   margin-bottom: 8px;
  }
  
   .modal-imput {
@@ -883,7 +890,8 @@ width: calc((100% - 48px) / 3);
  }
  .imput-svg {
     position: relative;
-    margin-bottom: 16px
+    margin-bottom: 16px;
+
  }
  .modal-imput:focus + .input-ikon {
     fill:  #4D5AE5;
@@ -916,7 +924,7 @@ width: calc((100% - 48px) / 3);
     align-items: center;
  }
  .check-text span {
-    display: inline-flex;
+    /* display: inline-flex; */
     width: 16px;
     height: 16px;
     border: 1px solid #404BBF;
@@ -942,6 +950,8 @@ width: calc((100% - 48px) / 3);
  .imput-check:focus +.check-text span {
     background: #404BBF;
  }
+
+
  .title-comment {
     font-weight: 500;
         font-size: 16px;
