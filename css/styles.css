@@ -849,7 +849,7 @@ width: calc((100% - 48px) / 3);
  
  .modal-field {
    position: relative; 
-   margin-bottom: 16px; 
+   margin-bottom: 8px; 
  }
  .modal-policy {
     margin-bottom: 24px; 
