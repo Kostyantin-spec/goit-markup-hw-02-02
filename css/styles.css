@@ -711,22 +711,25 @@ width: calc((100% - 48px) / 3);
 display: flex;
 align-items: center;
 justify-content: center;
+gap 24px;
 }
 .footer-input {
-
+    font-size: 12px;
     width: 264px; 
     height: 40px;
+    color: #ffffff;
     border: 1px solid #FFFFFF;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
         background-color: transparent;
         padding:8px 16px;
         margin-right: 24px;
-    
+        line-height: 1.5;
+        letter-spacing: 0.04em; 
 }
 .footer-btn {
     display: flex;
-    justify-content:flex-end;
+    justify-content: center;
     text-align:center;
     font-weight: 500;
         font-size: 16px;
@@ -740,10 +743,11 @@ justify-content: center;
             cursor: pointer;
             align-items:center;
             gap: 16px;
+            min-width: 165px; 
 }
 .footer-btn-icon {
     fill:  #FFFFFF;
-
+    margin-left: 16px; 
 }
 .footer-label {
     display: block;
@@ -761,7 +765,7 @@ justify-content: center;
         display: flex;
         align-items: center;
         letter-spacing: 0.04em;
-        color: #FFFFFF;
+        color: #ffffff; 
 }
 /* --------------------------- */
 .beckdrop {
@@ -845,8 +849,7 @@ justify-content: center;
  
  .modal-field {
    position: relative; 
-   /* margin-bottom: 8px;  */
-   /* margin-bottom: 16px; */
+   margin-bottom: 8px; 
  }
  .modal-policy {
     margin-bottom: 24px; 
@@ -949,6 +952,7 @@ justify-content: center;
  .check-text a {
     color: #4D5AE5;
     text-decoration: underline;
+    display: inline-flex;
  }
  .imput-check:checked + .check-text span {
     background: #404BBF;
@@ -966,7 +970,7 @@ justify-content: center;
         line-height: 1.5em;
         letter-spacing: 0.02em;
         color: #FFFFFF;
-        margin-bottom: 24px;
+        margin-bottom: 16px;
  }
 .modal-send-btn {
 display: block;
