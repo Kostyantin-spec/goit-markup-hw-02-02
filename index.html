@@ -17,37 +17,113 @@
     
 </head>
 <body>
- <header class="heder">
+     <!------------------Навигация--------------->
+        <header class="heder">
     <div class="container heder-container">
-    <!--Навигация-->
     <nav class="heder-nav list">
     <a href="./index.html" class="logo link">Web<span class="logo-heder-span">Studio</span></a>
     <ul class="site-nav link">
-        <li class="site-nav-menu list"><a href="./index.html" class="menu-title link current">Studio</a></li>
-        <li class="site-nav-menu list"><a href="./portfolio.html" class="menu-title link">Portfolio</a></li>
-        <li class="site-nav-menu list"><a href="" class="menu-title link">Contacts</a></li>   
+        <li class="site-nav-menu list">
+            <a href="./index.html" class="menu-title link current">Studio</a></li>
+        <li class="site-nav-menu list">
+            <a href="./portfolio.html" class="menu-title link">Portfolio</a></li>
+        <li class="site-nav-menu list">
+            <a href="" class="menu-title link">Contacts</a></li>   
        
     </ul>
     </nav>
     <address class="heder-address">
 <ul class="site-address list">
-<li class="site-address-link link"><a href="mailto:info@devstudio.com"  class="site-address link">info@devstudio.com</a></li>
-<li class="site-address-link link"><a href="tel:+110001111111" class="site-address link">+11 (000) 111-11-11</a></li>
+<li class="site-address-link link">
+    <a href="mailto:info@devstudio.com"  class="site-address link">info@devstudio.com</a></li>
+<li class="site-address-link link">
+    <a href="tel:+110001111111" class="site-address link">+11 (000) 111-11-11</a></li>
 </ul>
 
          </address>
+        
+         <!-- -------------Мобильное меню--------- -->
+         <button type="button" class="open-menu-btn" data-menu-open>
+            <svg class="mob-menu-svg-button" width="32" height="22">
+              <use href="./images/icons.svg#icon-menu"></use>
+           </svg> 
+       </button>
+    </div> 
+
+              <div class="mob-menu is-hidden" data-menu>
+                <div>
+                <button type="button" class="close-menu-btn" data-menu-close>
+                 <svg class="icon-mob-menu" width="8" height="8">
+                   <use href="./images/icons.svg#icon-c-black"></use>
+                </svg> 
+            </button>
+                   <ul class="mob-menu-list link">
+                    <li class="mob-menu-item list">
+                        <a href="./index.html" class="mob-link link current">Studio</a>
+                    </li>
+                    <li class="mob-menu-item link">
+                        <a href="./portfolio.html" class="mob-menu-link link">Portfolio</a>
+                    </li>
+                    <li class="mob-menu-item link">
+                        <a href="" class="mob-menu-link link">Contacts</a>
+                    </li>   
+                </ul>
+            </div>
+            <div class="div-mob-address">
+            <address class="mob-address">
+                <ul class="mob-menu-address list">
+                    
+                    <li class="mob-menu-nav-address">
+                        <a href="tel:+110001111111" class="mob-menu-address-tel link">+11 (000) 111-11-11</a>
+                    </li>
+                    <li class="mob-menu-nav-address">
+                        <a href="mailto:info@devstudio.com"  class="mob-menu-address-mailto link">info@devstudio.com</a>
+                    </li>
+                    </ul>
+                </address>
+                <ul class="mob-item-icon">
+                    <li class="mob-icon-list">
+                        <a class="mob-sending" href="" target="_blank">
+                            <svg class="mob-svg-icon-soc" width="16" height="16">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob-icon-list">
+                        <a class="mob-sending" href="" target="_blank">
+                            <svg class="mob-svg-icon-soc" width="16" height="16">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob-icon-list">
+                        <a class="mob-sending" href="" target="_blank">
+                            <svg class="mob-svg-icon-soc" width="16" height="16">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob-icon-list">
+                        <a class="mob-sending" href="" target="_blank">
+                            <svg class="mob-svg-icon-soc" width="16" height="16">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
               </div>
-          </header>
-              <!--Уникальний контент-->
+          </header> 
+              <!------------Уникальний контент---------->
     <main>
-    <section class="hiro-section">
+     <section class="hiro-section">
          <div class="container hiro-container">
         <h1 class="hiro-title">Effective Solutions
         for Your Business</h1>
         <button type="button" class="button" data-modal-open>Order Service</button>
         </div>
-    </section>
-               <!--------Наші роботи------------>
+    </section> 
+               <!--------------Наші роботи------------>
     <section class="business">
         <div class="container business-container">
         <h2 class="visually-hidden">info</h2>
@@ -57,7 +133,7 @@
                     <svg class="business-item-icon" width="64" height="64">
                  <use href="./images/icons.svg#icon-antenna"></use>
                     </svg>
-                </div>
+                 </div> 
                        <h3 class="section-title">Strategy</h3>
                     <p class="section-text">Our goal is to identify the business
                     problem to walk away with the perfect and creative solution.</p>
@@ -101,19 +177,38 @@
 <div class="container">
         <h2 class="headlines-title">What are we doing</h2>
         <ul class="doing list">
-            <li class="doing-item"><img src="./images/rectangle71.jpg" alt="monitor" width="360"></li>
-            <li class="doing-item"><img src="./images/rectangle712.jpg" alt="telephone" width="360"></li>
-            <li class="doing-item"><img src="./images/rectangle713.jpg" alt="loptir and phone" width="360"></li>
+            <li class="doing-item">
+                <img
+                srcset="./images/rectangle-gis-1.jpg 1x,
+                        ./images/rectangle-gis-2.jpg 2x"
+
+                 src="./images/rectangle71.jpg" alt="monitor" width="360"></li>
+            <li class="doing-item">
+                <img
+                srcset="./images/rectangle-2gis-1.jpg 1x,
+                        ./images/rectangle-2gis-2.jpg 2x"
+
+                 src="./images/rectangle712.jpg" alt="telephone" width="360"></li>
+            <li class="doing-item">
+                <img
+                srcset="./images/rectangle-3gis-1.jpg 1x,
+                        ./images/rectangle-3gis-2.jpg 2x"
+
+                 src="./images/rectangle713.jpg" alt="loptir and phone" width="360"></li>
         </ul>
         </div>
-    </section>
+    </section> 
     <!-----------Наша команда----------------->
-    <section class="section-color">
+     <section class="section-color">
         <div class="container container-comand">
 <h2 class="headlines-title">Our Team</h2>
 <ul class="team-list list">
     <li class="item-list">
-        <img src="./images/Mark.jpg" alt="Product Designer" width="264">
+        <img
+        srcset="./images/mark-gis-1.jpg 1x,
+                ./images/mark-gis-2.jpg 2x"
+
+         src="./images/Mark.jpg" alt="Product Designer" width="264">
         <div class="comand-title">
             <h3 class="comand-section-title">Mark Guerrero</h3>
                 <p class="section-text">Product Designer</p>
@@ -150,7 +245,11 @@
             </div>
     </li>
     <li class="item-list">
-        <img src="./images/Tom.jpg" alt="Frontend Developer" width="264">
+        <img
+              srcset="./images/tom-gis-1.jpg 1x,
+                      ./images/tom-gis-2.jpg 2x"
+
+         src="./images/Tom.jpg" alt="Frontend Developer" width="264">
         <div class="comand-title">
             <h3 class="comand-section-title">Tom Ford</h3>
                 <p class="section-text">Frontend Developer</p>
@@ -187,7 +286,11 @@
             </div>
     </li>
     <li class="item-list">
-        <img src="./images/Camila.jpg" alt="Marketing" width="264">
+        <img
+             srcset="./images/camila-gis-1.jpg 1x,
+                     ./images/camila-gis-2.jpg 2x"
+
+         src="./images/Camila.jpg" alt="Marketing" width="264">
         <div class="comand-title">
             <h3 class="comand-section-title">Camila Garcia</h3>
                 <p class="section-text">Marketing</p>
@@ -224,7 +327,11 @@
             </div>
     </li>
     <li class="item-list">
-        <img src="./images/Daniel.jpg" alt="Designer" width="264">
+        <img
+              srcset="./images/daniel-gis-1.jpg 1x,
+                      ./images/daniel-gis-2.jpg 2x"
+
+         src="./images/Daniel.jpg" alt="Designer" width="264">
         <div class="comand-title">
             <h3 class="comand-section-title">Daniel Wilson</h3>
                 <p class="section-text">UI Designer</p>
@@ -262,8 +369,9 @@
     </li>
 </ul>
 </div>
-    </section>
-    <section class="customers">
+    </section> 
+    <!-- ------------Customers------------ -->
+     <section class="customers">
             <div class="container">
                 <h2 class="headlines-title">Customers</h2>
                   <ul class="customers-list list">
@@ -316,10 +424,10 @@
         </li>
          </ul>
            </div>
-    </section>
+    </section> 
     </main>
-
-    <footer class="footer-color">
+<!-- ---------------------Footer---------- -->
+       <footer class="footer-color">
          <div class="footer-div"> 
             <div class="footer-top"> 
                <a href="./index.html" class="logo link">Web<span class="footer-logo">Studio</span></a>
@@ -374,6 +482,7 @@
         </div>
      </div> 
 </footer>
+<!-- -------------Beckdrop---------------- -->
               <div class="beckdrop is-hidden" data-modal>
                  <div class="modal">
                       <button type="button" class="modal-btn" data-modal-close>
@@ -427,12 +536,13 @@
             <a href="" class="polisi-title">Privacy Policy</a>
         </label>
     </div>
-        <button type="submit" class=modal-send-btn>Send</button>
+        <button type="submit" class="modal-send-btn">Send</button>
         
         </form>
     </div>
 </div>
 
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 </body>
 </html>
