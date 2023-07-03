@@ -16,12 +16,13 @@
                 <link rel="stylesheet" href="./css/media.css"/>
     
 </head>
-<body>
-     <!------------------Навигация--------------->
+ <body> 
+
+     <!-- Навигация -->
         <header class="heder">
     <div class="container heder-container">
     <nav class="heder-nav list">
-    <a href="./index.html" class="logo link">Web<span class="logo-heder-span">Studio</span></a>
+    <a href="./index.html" class="logo-nav link">Web<span class="logo-heder-span">Studio</span></a>
     <ul class="site-nav link">
         <li class="site-nav-menu list">
             <a href="./index.html" class="menu-title link current">Studio</a></li>
@@ -42,79 +43,17 @@
 
          </address>
         
-         <!-- -------------Мобильное меню--------- -->
+         <!-- Кнопка Мобильное меню -->
          <button type="button" class="open-menu-btn" data-menu-open>
-            <svg class="mob-menu-svg-button" width="32" height="22">
-              <use href="./images/icons.svg#icon-menu"></use>
+            <svg  width="32" height="22" stroke="currentColor">
+              <use href="./images/icons.svg#menu-icon"></use>
            </svg> 
        </button>
     </div> 
+</header> 
 
-              <div class="mob-menu is-hidden" data-menu>
-                <div>
-                <button type="button" class="close-menu-btn" data-menu-close>
-                 <svg class="icon-mob-menu" width="8" height="8">
-                   <use href="./images/icons.svg#icon-c-black"></use>
-                </svg> 
-            </button>
-                   <ul class="mob-menu-list link">
-                    <li class="mob-menu-item list">
-                        <a href="./index.html" class="mob-link link current">Studio</a>
-                    </li>
-                    <li class="mob-menu-item link">
-                        <a href="./portfolio.html" class="mob-menu-link link">Portfolio</a>
-                    </li>
-                    <li class="mob-menu-item link">
-                        <a href="" class="mob-menu-link link">Contacts</a>
-                    </li>   
-                </ul>
-            </div>
-            <div class="div-mob-address">
-            <address class="mob-address">
-                <ul class="mob-menu-address list">
-                    
-                    <li class="mob-menu-nav-address">
-                        <a href="tel:+110001111111" class="mob-menu-address-tel link">+11 (000) 111-11-11</a>
-                    </li>
-                    <li class="mob-menu-nav-address">
-                        <a href="mailto:info@devstudio.com"  class="mob-menu-address-mailto link">info@devstudio.com</a>
-                    </li>
-                    </ul>
-                </address>
-                <ul class="mob-item-icon">
-                    <li class="mob-icon-list">
-                        <a class="mob-sending" href="" target="_blank">
-                            <svg class="mob-svg-icon-soc" width="16" height="16">
-                                <use href="./images/icons.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="mob-icon-list">
-                        <a class="mob-sending" href="" target="_blank">
-                            <svg class="mob-svg-icon-soc" width="16" height="16">
-                                <use href="./images/icons.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="mob-icon-list">
-                        <a class="mob-sending" href="" target="_blank">
-                            <svg class="mob-svg-icon-soc" width="16" height="16">
-                                <use href="./images/icons.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="mob-icon-list">
-                        <a class="mob-sending" href="" target="_blank">
-                            <svg class="mob-svg-icon-soc" width="16" height="16">
-                                <use href="./images/icons.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-              </div>
-          </header> 
-              <!------------Уникальний контент---------->
+         
+              <!--хиро контент -->
     <main>
      <section class="hiro-section">
          <div class="container hiro-container">
@@ -123,7 +62,7 @@
         <button type="button" class="button" data-modal-open>Order Service</button>
         </div>
     </section> 
-               <!--------------Наші роботи------------>
+               <!-- Наші роботи------------>
     <section class="business">
         <div class="container business-container">
         <h2 class="visually-hidden">info</h2>
@@ -172,7 +111,7 @@
         </ul>
     </div>
     </section>
-    <!-------------Чим ми займаемось-------------->
+    <!-- Чим ми займаемось-------------->
     <section class="section-doing">
 <div class="container">
         <h2 class="headlines-title">What are we doing</h2>
@@ -198,7 +137,7 @@
         </ul>
         </div>
     </section> 
-    <!-----------Наша команда----------------->
+    <!-- Наша команда----------------->
      <section class="section-color">
         <div class="container container-comand">
 <h2 class="headlines-title">Our Team</h2>
@@ -370,7 +309,7 @@
 </ul>
 </div>
     </section> 
-    <!-- ------------Customers------------ -->
+    <!-- Customers------------ -->
      <section class="customers">
             <div class="container">
                 <h2 class="headlines-title">Customers</h2>
@@ -426,7 +365,7 @@
            </div>
     </section> 
     </main>
-<!-- ---------------------Footer---------- -->
+            <!-- Footer -->
        <footer class="footer-color">
          <div class="footer-div"> 
             <div class="footer-top"> 
@@ -482,7 +421,74 @@
         </div>
      </div> 
 </footer>
-<!-- -------------Beckdrop---------------- -->
+            <!--Мобильное меню -->
+ <div class="mob-menu is-open" data-menu> 
+               
+    <button type="button" class="close-menu-btn" data-menu-close>
+     <svg class="icon-mob-menu" width="8" height="8">
+       <use href="./images/icons.svg#icon-c-black"></use>
+    </svg> 
+</button>
+<div class="">
+    <nav class="mob-nav">
+       <ul class="mob-menu-list link">
+        <li class="mob-menu-item list">
+            <a href="./index.html" class="mob-link link current">Studio</a>
+        </li>
+        <li class="mob-menu-item link">
+            <a href="./portfolio.html" class="mob-menu-link link">Portfolio</a>
+        </li>
+        <li class="mob-menu-item link">
+            <a href="" class="mob-menu-link link">Contacts</a>
+        </li>   
+    </ul>
+</nav>
+</div>
+<div class="div-mob-address">
+    <ul class="mob-menu-address list">
+        
+        <li class="mob-menu-nav-address">
+            <a href="tel:+110001111111" class="mob-menu-address-tel link">+11 (000) 111-11-11</a>
+        </li>
+        <li class="mob-menu-nav-address">
+            <a href="mailto:info@devstudio.com"  class="mob-menu-address-mailto link">info@devstudio.com</a>
+        </li>
+        </ul>
+
+
+    <ul class="mob-item-icon">
+        <li class="mob-icon-list">
+            <a class="mob-sending" href="" target="_blank">
+                <svg class="mob-svg-icon-soc" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="mob-icon-list">
+            <a class="mob-sending" href="" target="_blank">
+                <svg class="mob-svg-icon-soc" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="mob-icon-list">
+            <a class="mob-sending" href="" target="_blank">
+                <svg class="mob-svg-icon-soc" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="mob-icon-list">
+            <a class="mob-sending" href="" target="_blank">
+                <svg class="mob-svg-icon-soc" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+            </a>
+        </li>
+    </ul>
+</div>
+  </div>
+               <!-- Beckdrop -->
               <div class="beckdrop is-hidden" data-modal>
                  <div class="modal">
                       <button type="button" class="modal-btn" data-modal-close>
