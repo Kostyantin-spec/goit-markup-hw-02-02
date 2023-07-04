@@ -151,7 +151,9 @@ padding-bottom: 36px;
 .footer-input {
     width: 264px;
 }
-
+.footer-btn {
+    gap: 16px;
+}
 .logo {
     justify-content: flex-start;
 }
