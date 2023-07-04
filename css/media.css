@@ -76,7 +76,7 @@ display: list-item;
 }
 .hiro-title {
     display: flex;
- min-width: 496px;
+    min-width: 496px;
     height: 120px;
      margin-bottom: 36px; 
     font-size: 56px;
